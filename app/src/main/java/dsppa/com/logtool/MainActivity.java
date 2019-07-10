@@ -15,11 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
 
-    private TextView openTv;
-
     private MyHandler handler = new MyHandler();
-
-    private TextView logTv;
 
     private static final int MSG_TYPE_E = 19;
     private static final int MSG_TYPE_I = 20;
@@ -32,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
             switch (msg.what) {
                 case MSG_TYPE_E:
                     Log.e(TAG, "is error log");
-
                     handler.sendEmptyMessageDelayed(MSG_TYPE_E, 4000);
                     break;
                 case MSG_TYPE_I:
@@ -42,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
                 default:
                     break;
             }
-            //recyclerView.scrollToPosition(logInfoList.size() - 1);
         }
     }
 
@@ -54,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         handler.sendEmptyMessageDelayed(MSG_TYPE_E, 4000);
         handler.sendEmptyMessageDelayed(MSG_TYPE_I, 2000);
 
-        openTv = findViewById(R.id.openTv);
+        TextView openTv = findViewById(R.id.openTv);
 
         openTv.setOnClickListener(new View.OnClickListener() {
             @Override

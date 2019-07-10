@@ -3,13 +3,4 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-    <color name="white">#ffffff</color>
-    <color name="red">@android:color/holo_red_light</color>
-    <color name="transpant0">#c0000000</color>
-    <color name="transpant1">#b0000000</color>
-    <color name="black">#000000</color>
-    <color name="greyLine">#A9A9A9</color>
-    <color name="editTextBackColor">#30ffffff</color>
-    <color name="editTextFocusedBackColor">#B0ffffff</color>
 </resources>

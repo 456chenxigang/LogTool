@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#CC99CC"
+    android:fitsSystemWindows="false">
 
     <TextView
         android:id="@+id/openTv"
@@ -11,6 +13,14 @@
         android:layout_height="wrap_content"
         android:text="show/hide"
         android:padding="12dp"
+        android:textSize="20sp"
         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="第一个界面"
+        android:layout_centerInParent="true"/>
 
 </RelativeLayout>
