@@ -22,7 +22,9 @@ dependencies {
 
 ### 使用
 - 在MyApplication中初始化：
-```LogManager.getInstance().init(getApplicationContext());```
+```
+LogManager.getInstance().init(getApplicationContext());
+```
 - 控制log界面的打开与关闭
 ```
 if (LogManager.getInstance().isShowing()){
