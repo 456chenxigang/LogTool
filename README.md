@@ -3,7 +3,24 @@
 ### 效果
 ![screenshots](screenshots.gif)
 
-### 使用方法
+### 引入library
+- 在build.gradle中添加
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+以及添加dependency
+```	
+dependencies {
+   	        implementation 'com.github.456chenxigang:LogTool:1.0'
+   	}
+```
+
+### 使用
 - 在MyApplication中初始化：
 ```LogManager.getInstance().init(getApplicationContext());```
 - 控制log界面的打开与关闭
