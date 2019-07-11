@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //88888
         handler.sendEmptyMessageDelayed(MSG_TYPE_E, 4000);
         handler.sendEmptyMessageDelayed(MSG_TYPE_I, 2000);
 
