@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     private class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
+
+            //annotation
             super.handleMessage(msg);
 
             switch (msg.what) {
