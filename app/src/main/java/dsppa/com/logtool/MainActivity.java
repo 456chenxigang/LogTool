@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (LogManager.getInstance().isShowing()){
-                    LogManager.getInstance().close();
+                     LogManager.getInstance().close();
                 }else {
                     LogManager.getInstance().show();
                 }
