@@ -107,7 +107,7 @@ public class LogManager {
 
                     @Override
                     public void onShow() {
-                        Log.i(TAG, "onShow");
+                        //Log.i(TAG, "onShow");
                         if (isStop) {
                             close();
                         }
@@ -115,27 +115,27 @@ public class LogManager {
 
                     @Override
                     public void onHide() {
-                        Log.i(TAG, "onHide");
+                        //Log.i(TAG, "onHide");
                     }
 
                     @Override
                     public void onDismiss() {
-                        Log.i(TAG, "onDismiss");
+                        //Log.i(TAG, "onDismiss");
                     }
 
                     @Override
                     public void onMoveAnimStart() {
-                        Log.i(TAG, "onMoveAnimStart");
+                        //Log.i(TAG, "onMoveAnimStart");
                     }
 
                     @Override
                     public void onMoveAnimEnd() {
-                        Log.i(TAG, "onMoveAnimEnd");
+                        //Log.i(TAG, "onMoveAnimEnd");
                     }
 
                     @Override
                     public void onBackToDesktop() {
-                        Log.i(TAG, "onBackToDesktop");
+                        //Log.i(TAG, "onBackToDesktop");
                     }
                 })
                 .build();
@@ -236,7 +236,7 @@ public class LogManager {
         if (FloatWindow.get() == null) {
             return false;
         }
-        Log.e("TAG", "isShow:" + FloatWindow.get().isShowing());
+        //Log.e("TAG", "isShow:" + FloatWindow.get().isShowing());
         return FloatWindow.get().isShowing();
     }
 
