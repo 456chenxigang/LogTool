@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //8888
-        handler.sendEmptyMessageDelayed(MSG_TYPE_E, 4000);
+        //handler.sendEmptyMessageDelayed(MSG_TYPE_E, 4000);
         handler.sendEmptyMessageDelayed(MSG_TYPE_I, 2000);
 
         TextView openTv = findViewById(R.id.openTv);
