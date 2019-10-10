@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                      LogManager.getInstance().close();
                 }else {
                     LogManager.getInstance().show();
+                    //LogManager.getInstance().setLogTag("MainActivity");
                 }
             }
         });

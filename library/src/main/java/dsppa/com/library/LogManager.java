@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Message;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.LinearLayoutManager;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -252,6 +253,11 @@ public class LogManager {
         if (isStop) {
             return;
         }
+        if (!TextUtils.isEmpty(info.content)){
+            if (!info.content.contains(logTag)){
+                return;
+            }
+        }
         if (logInfoList != null) {
             logInfoList.add(0, info);
         }
@@ -264,6 +270,10 @@ public class LogManager {
 
     public String getLogTag(){
         return logTag;
+    }
+
+    public void setLogTag(String tag){
+        this.logTag = tag;
     }
 
     private void setViewVisible(int value) {

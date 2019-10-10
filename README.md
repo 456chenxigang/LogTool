@@ -33,3 +33,7 @@ if (LogManager.getInstance().isShowing()){
          LogManager.getInstance().show();
        }
 ```
+- TAG过滤
+```
+LogManager.getInstance().setLogTag("MainActivity");
+```
