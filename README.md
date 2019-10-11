@@ -16,7 +16,9 @@
 以及添加dependency
 ```	
 dependencies {
-   	        implementation 'com.github.456chenxigang:LogTool:1.0'
+   	        implementation 'com.github.456chenxigang:LogTool:1.1'
+   	        //如果出现错误，同时引入：implementation 'com.github.yhaolpz:FloatWindow:1.0.9'
+   	        
    	}
 ```
 
